@@ -52,7 +52,10 @@ export default function DashboardPage() {
                 </div>
                 <h3 className="font-bold text-slate-800 truncate text-sm">{prop.address}</h3>
               </div>
-              
+              <a href={`https://real-state-bccgbqbaf0edgeg5.canadacentral-01.azurewebsites.net/property/${prop.id}`} 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block">
               <div className="flex justify-between items-end border-t border-slate-50 pt-4">
                 <div>
                   <p className="text-[10px] uppercase font-bold text-slate-400">Surplus</p>
@@ -64,6 +67,7 @@ export default function DashboardPage() {
                   {prop.status}
                 </span>
               </div>
+              </a>
             </div>
           ))}
         </div>
