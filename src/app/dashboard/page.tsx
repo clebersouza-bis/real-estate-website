@@ -17,7 +17,7 @@ export default function DashboardPage() {
   useEffect(() => {
     async function fetchProperties() {
       try {
-        const propId='cdef13c2-bf8b-45e1-9751-f0793a4d599d'
+        const propId='71c790f4-258b-4619-9838-7368e0e802dd'
         const response = await api.get(`/properties/${propId}`); 
         
         // CORREÇÃO PARA O ERRO .MAP:
