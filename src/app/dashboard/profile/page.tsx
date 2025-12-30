@@ -21,7 +21,7 @@ export default function ProfilePage() {
     async function fetchOwner() {
       try {
         // Substitua pelo ID real que você quer testar ou pegue de algum lugar
-        const ownerId = "b554b82a-6f83-4257-9cab-38b542300d25"; 
+        const ownerId = "5969a175-ed51-47b0-a88a-b4f6e321e97c"; 
         const response = await api.get(`/owner/${ownerId}`);
         setOwner(response.data);
       } catch (error) {
