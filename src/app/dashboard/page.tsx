@@ -6,7 +6,7 @@ import { Home, Landmark, ArrowUpRight } from "lucide-react";
 interface Property {
   id: string;
   address: string;
-  surplusAmount: string; 
+  excessProceeds: string; 
   status: string;
 }
 
@@ -60,7 +60,7 @@ export default function DashboardPage() {
                 <div>
                   <p className="text-[10px] uppercase font-bold text-slate-400">Surplus</p>
                   <p className="text-xl font-black text-slate-900">
-                    ${prop.surplusAmount}
+                    ${prop.excessProceeds}
                   </p>
                 </div>
                 <span className="px-2 py-1 rounded bg-amber-100 text-amber-700 text-[10px] font-bold uppercase">
